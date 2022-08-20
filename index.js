@@ -1,30 +1,31 @@
 const express = require("express")
 
-const port = 3000;
-
 const app = express();
+const port = process.env.PORT || 3000;
 
-const router = express.Router()
+app.use(express.json())
 
-router.get("/", (request, response)=>{
+// const router = express.Router()
+
+app.get("/", (request, response)=>{
   response.json({
     gretting: "hola"
   })
 })
 
-router.get("/otra-ruta", (request, response)=>{
+app.get("/otra-ruta", (request, response)=>{
   response.json({
     gretting: "hola x2"
   })
 })
 
-router.get("/otra-ruta/mas-larga", (request, response)=>{
+app.get("/otra-ruta/mas-larga", (request, response)=>{
   response.json({
     gretting: "hola x3"
   })
 })
 
-app.use("/", router)
+// app.use("/", router)
 
 app.listen(port, (error) => {
 
