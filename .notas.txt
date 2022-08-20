@@ -1,0 +1,14 @@
+Esta API sí se deploya con éxito en Heroku
+
+Hay que estar pendiente de colocar el middleware de json: 
+  
+  import express from "express"
+  
+  const app = express()
+  app.use(express.json())
+  
+Hay que colocar el archivo Procfile
+
+  web: npm run start
+  
+Hay que recordar colocar las variables de entorno en la configuración de la aplicación de Heroku
