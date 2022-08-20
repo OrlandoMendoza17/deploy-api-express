@@ -18,6 +18,12 @@ router.get("/otra-ruta", (request, response)=>{
   })
 })
 
+router.get("/otra-ruta/mas-larga", (request, response)=>{
+  response.json({
+    gretting: "hola x3"
+  })
+})
+
 app.use("/", router)
 
 app.listen(port, (error) => {
