@@ -12,3 +12,5 @@ Hay que colocar el archivo Procfile
   web: npm run start
   
 Hay que recordar colocar las variables de entorno en la configuración de la aplicación de Heroku
+
+Hay que acordarse de colocar el script que cree el archivo .env al momento del deploy
