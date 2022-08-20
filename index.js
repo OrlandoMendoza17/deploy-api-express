@@ -5,27 +5,27 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json())
 
-// const router = express.Router()
+const router = express.Router()
 
-app.get("/", (request, response)=>{
+router.get("/", (request, response)=>{
   response.json({
     gretting: "hola"
   })
 })
 
-app.get("/otra-ruta", (request, response)=>{
+router.get("/otra-ruta", (request, response)=>{
   response.json({
     gretting: "hola x2"
   })
 })
 
-app.get("/otra-ruta/mas-larga", (request, response)=>{
+router.get("/otra-ruta/mas-larga", (request, response)=>{
   response.json({
     gretting: "hola x3"
   })
 })
 
-// app.use("/", router)
+app.use("/", router)
 
 app.listen(port, (error) => {
 
