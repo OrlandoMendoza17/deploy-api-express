@@ -1,0 +1,29 @@
+{
+  "name": "prueba-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node" : "14.x"
+  },
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrlandoMendoza17/prueba-express.git"
+  },
+  "keywords": [],
+  "author": "Orlando Mendoza <ommv.17@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OrlandoMendoza17/prueba-express/issues"
+  },
+  "homepage": "https://github.com/OrlandoMendoza17/prueba-express#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}
